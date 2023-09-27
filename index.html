@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--App CSS-->
+  <link rel="stylesheet" href="assets/main.css">
+
+  <!--LocalForage JS-->
+  <script src="assets/modules/localforage.js"></script>
+
+  <!--webXDC API-->
+  <script src="webxdc.js"></script>
+
+  <!--JS-Zip-->
+  <script src="assets/modules/js-zip.js"></script>
+
+</head>
+
+<body align="middle">
+  
+  <dialog id="confirmShare">
+    <div>
+    Delta-Shortcuts: <span id="size"></span> KB.
+    </div>
+    <br>
+    <div>
+      
+    <button id="cancelShare"><img src="assets/imgs/left.svg"></button>
+    
+    <button id="shareDS"><img src="assets/imgs/share.svg"></button>
+    
+    </div>
+  </dialog>
+  
+  <input class="displayNone" type="file" id="fileInput" multiple>
+
+  <div id="actions">
+    <button id="fileBtn"><img src="assets/imgs/plus.svg"></button>
+    <button id="deleteBtn"><img src="assets/imgs/trash.svg"></button>
+    <button id="shareBtn"><img src="assets/imgs/share.svg"></button>
+    <button id="dsBtn"><img src="icon.png"></button>
+  </div>
+
+  <hr>
+
+  <div id="apps"></div>
+
+  <!--App JS-->
+  <script src="assets/main.js"></script>
+
+</body>
+</html>
